@@ -342,7 +342,7 @@ client.on('message', message => {
   });
  
 client.on('message', message => {
-  if (!message.content.startsWith(adminprefix)) return;
+  if (!message.content.startsWith(PreFix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
   if (message.author.id !== "331081268731052042") return;
